@@ -742,6 +742,7 @@ Rules:
 -funny moments, reactions, hilarious reactions should come up in comedy
 -cute moments should come up in media
 -try to use other folder minimally things lie nonchalant celebrations normally fall unser sports so you can kind of roughly guess, but if u have no clue then only then put it in other
+-music videos of a movie especially indian ones should come under music not movie
 
 - Use CHANNEL only as supporting context, never as the main deciding factor
 - Understand FULL CONTEXT of the title
