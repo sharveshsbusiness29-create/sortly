@@ -518,6 +518,7 @@ Comedy
 Motivation
 Movies
 Music
+Nature
 News
 Podcasts
 Social
@@ -621,6 +622,9 @@ netflix shows, web series, serials
 Music:
 songs, rap, albums, beats, playlists,
 concerts, remixes, music videos
+
+Nature:
+nature, animals, plants, new animal species, bbc earth
 
 News:
 breaking news, world events, politics,
