@@ -584,7 +584,7 @@ internet culture, viral content, commentary, fan edits
 
 Comedy:
 memes, skits, pranks, trolling, parody,
-standup, funny compilations, joke content, humor, shitposts
+standup, funny compilations, joke content, humor, shitposts, tickles
 
 Motivation:
 discipline, success, self improvement,
@@ -650,27 +650,16 @@ interviews, podcasts interviews,
 talk shows, guest conversations
 
 IMPORTANT RULES:
+1. Output Format: Return ONLY valid JSON. Absolutely NO markdown block formatting (do not use ```json), NO conversational filler, and NO explanations.
+2. Translation: If the title is in a language other than English, translate it to English mentally before analyzing context.
+3. Core Logic: Prioritize the FULL CONTEXT of the TITLE over the CHANNEL. Use the channel name strictly as supporting context or as a tie-breaker fallback if the title is ambiguous (e.g., if the title is vague but the channel is a known musician, map to "Music"). If completely unable to determine a category, default to "Other".
 
-- Return ONLY JSON
-- No markdown
-- No explanation
-- Focus mainly on the TITLE like even if channel is from footballer for example they could be gaming therefore it should not be in sports becasue they are a footballer but in games because the video is about gaming
--Cold football edits aren't comedia or media they are sports look out for edits of poeple, like footballers etc.
-- Use CHANNEL only as supporting context
-- Understand FULL CONTEXT of the title
-- A football challenge with a content creator is Media, not Sports
-- A funny prank is comedy not media
-- Sports should involve actual matches, gameplay, highlights, athletes, teams, or physical sports
--If a video title has no ai used it is photography
-- Interviews are NOT automatically News
--Also if you are unsure of what to categorize based on the title, use the channel name for example god mode from channel name sai abhyankar falls in music
-- "Live" does NOT automatically mean News
-- Entertainment-style creator content belongs in Media
-- If unsure use Other
-- Sometimes movie names contain other folders for example movie cars has should be in the Movies folder instead of automotive, also in the title there will be production companies, if you see those then it is a movie, but also for cars theere are series so lookk out ok
-- Sometimes famous footballers will do challenges with content creators like guess the footballer this means that the video shou;ld go to media not sports becasue sports is only for matches, highlights and general sports activities or information not these content challenges
--If something is a compilation like funny compilation then it should go to media
--If the title is in another language try and translate it into english, not all titles are going to be english
+FOLDER CLASSIFICATION RULES:
+- Sports vs. Media: "Sports" is strictly for actual physical matches, gameplay, professional highlights, professional athletes, or physical sports events. "Cold football edits" or hype reels of athletes belong in "Sports". Content creator challenges with athletes (e.g., "Guess the Footballer" or skill challenges) belong in "Media".
+- Comedy vs. Media: Purely humorous content like standalone pranks, skits, and memes belong in "Comedy". General entertainment-style creator content and compiled content (e.g., "funny compilation") belong in "Media".
+- Movies vs. Automotive/Series: If a title references a film property (look for film production company names or specific movie titles like "Cars"), sort it into "Movies" or "Series" instead of "Automotive".
+- Tech vs. Photography: If a title looks tech-oriented or automated but has no explicit mention or context of AI/Artificial Intelligence, categorize it under "Photography".
+- Misleading Keywords: Do NOT auto-categorize keywords. "Live" and "Interviews" do NOT automatically mean "News". Map interviews to "Interviews" and assess live content by its true topic context.
 
 Example:
 {
