@@ -1,0 +1,865 @@
+require('dotenv').config();
+
+const express = require('express');
+const cors = require('cors');
+const axios = require('axios');
+const Groq = require('groq-sdk');
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+const groq = new Groq({
+  apiKey: process.env.GROQ_API_KEY,
+});
+
+/**
+ * EXPAND URL
+ */
+async function expandUrl(url) {
+
+  try {
+
+    const response = await axios.get(url, {
+
+      maxRedirects: 5,
+      timeout: 10000,
+
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0"
+      }
+
+    });
+
+    return (
+      response.request?.res?.responseUrl ||
+      url
+    );
+
+  } catch (error) {
+
+    console.log(
+      "URL EXPAND FAILED:",
+      error.message
+    );
+
+    return url;
+  }
+}
+
+/**
+ * FACEBOOK FETCH
+ * (OLD WORKING VERSION)
+ */
+async function getFacebookData(url) {
+
+  try {
+
+    const finalUrl =
+      await expandUrl(url);
+
+    console.log(
+      "FINAL FACEBOOK URL:",
+      finalUrl
+    );
+
+    const response =
+      await axios.get(finalUrl, {
+
+        headers: {
+          "User-Agent":
+            "Mozilla/5.0"
+        }
+
+      });
+
+    const html =
+      response.data;
+
+    const ogTitle =
+      html.match(
+        /<meta property="og:title" content="([^"]*)"/
+      );
+
+    const pageTitle =
+      html.match(
+        /<title>(.*?)<\/title>/
+      );
+
+    const description =
+      html.match(
+        /<meta name="description" content="([^"]*)"/
+      );
+
+    console.log(
+      "OG TITLE:",
+      ogTitle?.[1]
+    );
+
+    console.log(
+      "PAGE TITLE:",
+      pageTitle?.[1]
+    );
+
+    console.log(
+      "DESCRIPTION:",
+      description?.[1]
+    );
+
+    return {
+
+      title:
+        ogTitle?.[1] ||
+        pageTitle?.[1] ||
+        description?.[1] ||
+        "Unknown Facebook Video",
+
+      channel:
+        "Facebook"
+    };
+
+  } catch (error) {
+
+    console.log(
+      "FACEBOOK FETCH FAILED:",
+      error.message
+    );
+
+    return {
+
+      title:
+        "Unknown Facebook Video",
+
+      channel:
+        "Facebook"
+    };
+  }
+}
+
+/**
+ * INSTAGRAM FETCH
+ * (YOUR WORKING VERSION)
+ */
+async function getInstagramData(url) {
+
+  try {
+
+    console.log(
+      "FETCHING INSTAGRAM:",
+      url
+    );
+
+    const response =
+      await axios.get(url, {
+
+        headers: {
+          "User-Agent":
+            "Mozilla/5.0"
+        },
+
+        timeout:
+          10000
+      });
+
+    const html =
+      response.data;
+
+    /**
+     * OG DESCRIPTION
+     */
+    const ogDesc =
+      html.match(
+        /<meta property="og:description" content="([^"]*)"/
+      );
+
+    /**
+     * OG TITLE
+     */
+    const ogTitle =
+      html.match(
+        /<meta property="og:title" content="([^"]*)"/
+      );
+
+    /**
+     * PAGE TITLE
+     */
+    const pageTitle =
+      html.match(
+        /<title>(.*?)<\/title>/
+      );
+
+    console.log(
+      "IG OG DESC:",
+      ogDesc?.[1]
+    );
+
+    console.log(
+      "IG OG TITLE:",
+      ogTitle?.[1]
+    );
+
+    console.log(
+      "IG PAGE TITLE:",
+      pageTitle?.[1]
+    );
+
+    let cleanTitle =
+
+      ogDesc?.[1] ||
+      ogTitle?.[1] ||
+      pageTitle?.[1] ||
+      "Unknown Instagram Post";
+
+    /**
+     * CLEAN NOISE
+     */
+    cleanTitle =
+      cleanTitle
+
+      .replace(
+        /\s*on Instagram:.*$/i,
+        ""
+      )
+
+      .replace(
+        /\s*Instagram\s*•.*$/i,
+        ""
+      )
+
+      .replace(
+        /\s*shared a post.*$/i,
+        ""
+      )
+
+      .trim();
+
+    return {
+
+      title:
+        cleanTitle,
+
+      channel:
+        "Instagram"
+    };
+
+  } catch (error) {
+
+    console.log(
+      "INSTAGRAM FETCH FAILED:",
+      error.message
+    );
+
+    return {
+
+      title:
+        "Unknown Instagram Post",
+
+      channel:
+        "Instagram"
+    };
+  }
+}
+
+/**
+ * TIKTOK FETCH
+ */
+async function getTikTokData(url) {
+
+  try {
+
+    const finalUrl =
+      await expandUrl(url);
+
+    console.log(
+      "FINAL TIKTOK URL:",
+      finalUrl
+    );
+
+    const response =
+      await axios.get(finalUrl, {
+
+        timeout: 10000,
+
+        headers: {
+
+          "User-Agent":
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/122 Safari/537.36",
+
+          "Accept-Language":
+            "en-US,en;q=0.9"
+        }
+
+      });
+
+    const html =
+      response.data;
+
+    const descMatch =
+      html.match(
+        /"desc":"(.*?)"/
+      );
+
+    const authorMatch =
+      html.match(
+        /"author":"(.*?)"/
+      );
+
+    const ogTitle =
+      html.match(
+        /<meta property="og:title" content="([^"]*)"/
+      );
+
+    const title =
+
+      descMatch?.[1]
+        ?.replace(/\\n/g, ' ')
+        ?.replace(/\\"/g, '"') ||
+
+      ogTitle?.[1] ||
+
+      "Unknown TikTok Video";
+
+    const author =
+      authorMatch?.[1] ||
+      "Unknown";
+
+    console.log(
+      "TIKTOK TITLE:",
+      title
+    );
+
+    console.log(
+      "TIKTOK AUTHOR:",
+      author
+    );
+
+    return {
+
+      title,
+      author,
+
+      channel:
+        "TikTok"
+    };
+
+  } catch (error) {
+
+    console.log(
+      "TIKTOK FETCH FAILED:",
+      error.message
+    );
+
+    return {
+
+      title:
+        "Unknown TikTok Video",
+
+      author:
+        "Unknown",
+
+      channel:
+        "TikTok"
+    };
+  }
+}
+
+/**
+ * YOUTUBE FETCH
+ */
+async function getYouTubeData(url) {
+
+  try {
+
+    const finalUrl =
+      await expandUrl(url);
+
+    console.log(
+      "FINAL YOUTUBE URL:",
+      finalUrl
+    );
+
+    const response =
+      await axios.get(finalUrl, {
+
+        headers: {
+          "User-Agent":
+            "Mozilla/5.0"
+        },
+
+        timeout:
+          10000
+      });
+
+    const html =
+      response.data;
+
+    /**
+     * TITLE
+     */
+    const ogTitle =
+      html.match(
+        /<meta property="og:title" content="([^"]*)"/
+      );
+
+    /**
+     * CHANNEL
+     */
+    const channelMatch =
+      html.match(
+        /"ownerChannelName":"([^"]*)"/
+      );
+
+    const pageTitle =
+      html.match(
+        /<title>(.*?)<\/title>/
+      );
+
+    const title =
+
+      ogTitle?.[1] ||
+
+      pageTitle?.[1]
+        ?.replace(/\s*- YouTube$/, '') ||
+
+      "Unknown YouTube Video";
+
+    const channel =
+      channelMatch?.[1] ||
+      "YouTube";
+
+    console.log(
+      "YOUTUBE TITLE:",
+      title
+    );
+
+    console.log(
+      "YOUTUBE CHANNEL:",
+      channel
+    );
+
+    return {
+
+      title,
+      channel
+    };
+
+  } catch (error) {
+
+    console.log(
+      "YOUTUBE FETCH FAILED:",
+      error.message
+    );
+
+    return {
+
+      title:
+        "Unknown YouTube Video",
+
+      channel:
+        "YouTube"
+    };
+  }
+}
+
+/**
+ * API
+ */
+app.post('/classify', async (req, res) => {
+
+  try {
+
+    const { url } =
+      req.body;
+
+    console.log(
+      "REQUEST URL:",
+      url
+    );
+
+    let data;
+
+    /**
+     * INSTAGRAM
+     */
+    if (
+      url.includes(
+        "instagram.com"
+      )
+    ) {
+
+      data =
+        await getInstagramData(url);
+    }
+
+    /**
+ * YOUTUBE
+ */
+else if (
+
+  url.includes("youtube.com") ||
+  url.includes("youtu.be")
+
+) {
+
+  data =
+    await getYouTubeData(url);
+}
+
+    /**
+     * TIKTOK
+     */
+    else if (
+      url.includes(
+        "tiktok.com"
+      )
+    ) {
+
+      data =
+        await getTikTokData(url);
+    }
+
+    /**
+     * FACEBOOK
+     */
+    else if (
+
+      url.includes(
+        "facebook.com"
+      ) ||
+
+      url.includes(
+        "fb.watch"
+      )
+
+    ) {
+
+      data =
+        await getFacebookData(url);
+    }
+
+    /**
+     * UNKNOWN
+     */
+    else {
+
+      data = {
+
+        title:
+          "Unsupported URL",
+
+        channel:
+          "Unknown"
+      };
+    }
+
+    /**
+ * GROQ CLASSIFICATION
+ */
+const completion =
+  await groq.chat.completions.create({
+
+    messages: [
+      {
+        role: 'user',
+        content: `
+
+Return ONLY valid JSON.
+
+Choose ONE folder from this list ONLY:
+
+AI
+Automotive
+Business
+Coding
+Education
+Fitness
+Food
+Gaming
+Health
+Interviews
+Lifestyle
+Media
+Comedy
+Motivation
+Movies
+Music
+News
+Podcasts
+Social
+Sports
+Tech
+Travel
+Fashion
+Photography
+Series
+Spirituality
+Other
+Uncategorized
+
+
+CATEGORY GUIDELINES:
+
+
+AI:
+artificial intelligence, chatgpt, openai, gpt, llm,
+machine learning, neural networks, automation, agents, prompts
+
+Automotive:
+cars, bikes, motorcycles, supercars, f1, racing,
+engines, drifting, tesla, bmw, ferrari, automotive reviews
+
+Business:
+startups, entrepreneurship, marketing, ecommerce,
+sales, money making, investing, branding, finance, side hustles
+
+Coding:
+programming, software engineering, javascript,
+python, java, kotlin, c++, github, APIs, web development, apps
+
+Education:
+tutorials, explainers, documentaries, science,
+history, maths, lectures, courses, learning content
+
+Fitness:
+gym, workouts, bodybuilding, exercise,
+strength training, cardio, weight loss, nutrition training
+
+Food:
+recipes, cooking, chefs, restaurants,
+street food, baking, food reviews, mukbang
+
+Gaming:
+video games, gameplay, esports, streaming,
+minecraft, fortnite, valorant, gta, fifa, fc, efootball,
+gaming challenges, gaming collabs, walkthroughs
+
+IMPORTANT:
+- FIFA / FC / eFootball = Gaming ONLY
+
+Health:
+mental health, wellness, medical, therapy,
+nutrition, healthy living, self-care
+
+Lifestyle:
+daily life, routines, relationships, self improvement,
+fashion lifestyle, beauty, skincare, habits
+
+Media:
+entertainment culture, influencer content,
+youtube drama, celebrity news, reactions,
+internet culture, viral content, commentary, fan edits
+
+Comedy:
+memes, skits, pranks, trolling, parody,
+standup, funny compilations, joke content, humor, shitposts
+
+Motivation:
+discipline, success, self improvement,
+mindset, productivity, inspiration, grind culture
+
+Movies:
+films, movie trailers, cinema, actors,
+blockbusters, film clips, production, behind the scenes
+
+Series:
+tv shows, episodes, streaming series,
+netflix shows, web series, serials
+
+Music:
+songs, rap, albums, beats, playlists,
+concerts, remixes, music videos
+
+News:
+breaking news, world events, politics,
+current affairs, global updates, reports
+
+Podcasts:
+podcasts, long-form conversations,
+talk shows, interviews, discussions
+
+Social:
+tiktok, instagram, influencers,
+content creators, online culture, social media trends
+
+Sports:
+real-world sports only:
+football matches, basketball, cricket, boxing, UFC,
+tennis, tournaments, leagues, highlights, goals, athletes
+
+IMPORTANT:
+- REAL sports events ONLY
+- NO sports video games
+- NO creator challenges with athletes
+- NO memes/reactions belong here
+
+Tech:
+technology, gadgets, software, smartphones,
+laptops, reviews, AI hardware, apps, innovations
+
+Travel:
+travel, countries, flights, hotels,
+vacations, tourism, adventures
+
+Fashion:
+streetwear, outfits, clothing, brands,
+style, designer, fashion shows
+
+Photography:
+cinematography, cameras, videography,
+filmmaking, editing, colour grading, visual storytelling
+
+Spirituality:
+meditation, mindfulness, religion,
+manifestation, spirituality, self-awareness
+
+Interviews:
+interviews, podcasts interviews,
+talk shows, guest conversations
+
+IMPORTANT RULES:
+
+- Return ONLY JSON
+- No markdown
+- No explanation
+- Focus mainly on the TITLE like even if channel is from footballer for example they could be gaming therefore it should not be in sports becasue they are a footballer but in games because the video is about gaming
+- Use CHANNEL only as supporting context
+- Understand FULL CONTEXT of the title
+- A football challenge with a content creator is Media, not Sports
+- A funny prank is comedy not media
+- Sports should involve actual matches, gameplay, highlights, athletes, teams, or physical sports
+-If a video title has no ai used it is photography
+- Interviews are NOT automatically News
+-Also if you are unsure of what to categorize based on the title, use the channel name for example god mode from channel name sai abhyankar falls in music
+- "Live" does NOT automatically mean News
+- Entertainment-style creator content belongs in Media
+- If unsure use Other
+- Sometimes movie names contain other folders for example movie cars has should be in the Movies folder instead of automotive, also in the title there will be production companies, if you see those then it is a movie, but also for cars theere are series so lookk out ok
+- Sometimes famous footballers will do challenges with content creators like guess the footballer this means that the video shou;ld go to media not sports becasue sports is only for matches, highlights and general sports activities or information not these content challenges
+-If something is a compilation like funny compilation then it should go to media
+
+Example:
+{
+  "folder": "Music"
+}
+
+Title: ${data.title}
+Channel: ${data.channel}
+
+`
+      }
+    ],
+
+    model:
+      'llama-3.3-70b-versatile'
+});
+
+let result =
+  completion.choices[0]
+  .message.content;
+
+result = result
+
+  .replace(/```json/g, '')
+  .replace(/```/g, '')
+  .trim();
+
+let folder =
+  "Uncategorized";
+
+try {
+
+  folder =
+    JSON.parse(result).folder ||
+    "Uncategorized";
+
+} catch (e) {
+
+  console.log(
+    "FOLDER JSON FAILED:",
+    result
+  );
+}
+
+/**
+ * CLEAN TITLE
+ */
+const titleCompletion =
+  await groq.chat.completions.create({
+
+    messages: [
+      {
+        role: 'user',
+        content: `
+
+Create a short clean human-readable title.
+
+Rules:
+- No markdown
+- No quotes
+- No explanation
+- Keep concise
+
+Original Title:
+${data.title}
+
+Channel:
+${data.channel}
+
+`
+      }
+    ],
+
+    model:
+      'llama-3.3-70b-versatile'
+});
+
+let aiTitle =
+  titleCompletion.choices[0]
+  .message.content
+
+  .replace(/```/g, '')
+  .trim();
+
+/**
+ * FINAL RESPONSE
+ */
+res.json({
+
+  folder,
+
+  aiTitle,
+
+  originalTitle:
+    data.title,
+
+  channel:
+    data.channel,
+
+  timestamp:
+    new Date().toISOString()
+});
+
+  } catch (error) {
+
+    console.log(
+      "SERVER ERROR:",
+      error
+    );
+
+    res.status(500).json({
+
+      error:
+        "failed"
+    });
+  }
+});
+
+/**
+ * START SERVER
+ */
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log("Server running on port", PORT);
+});
