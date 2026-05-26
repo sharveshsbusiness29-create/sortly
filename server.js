@@ -9,6 +9,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+
+app.get('/', (req, res) => {
+  res.send('Sortly backend running');
+});
+
+
 const groq = new Groq({
   apiKey: process.env.GROQ_API_KEY,
 });
