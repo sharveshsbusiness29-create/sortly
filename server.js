@@ -368,9 +368,6 @@ async function getTikTokData(url) {
  * YOUTUBE FETCH
  */
 async function getYouTubeData(url) {
-
-  
-
   try {
 
     const finalUrl =
@@ -386,11 +383,10 @@ async function getYouTubeData(url) {
 
         headers: {
           "User-Agent":
-            "Mozilla/5.0"
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/122 Safari/537.36"
         },
 
-        timeout:
-          10000
+        timeout: 10000
       });
 
     const html =
@@ -399,34 +395,77 @@ async function getYouTubeData(url) {
     /**
      * TITLE
      */
-    const channelMatch = html.match(/"ownerChannelName":"([^"]*)"/);
-
-    /**
-     * CHANNEL
-     */
-    const channel =
-  channelMatch?.[1] ||
-  html.match(/"channelName":"([^"]*)"/)?.[1] ||
-  "YouTube";
+    const titleMatch =
+      html.match(
+        /<meta property="og:title" content="([^"]*)"/
+      );
 
     const pageTitle =
       html.match(
         /<title>(.*?)<\/title>/
       );
 
-    const cleanTitle = (title || "Unknown YouTube Video")
-  .replace(/\\u0026/g, "&")
-  .replace(/\\n/g, " ")
-  .replace(/\\"/g, '"')
-  .trim();
+    /**
+     * CHANNEL
+     */
+    const channelMatch =
+      html.match(
+        /"ownerChannelName":"([^"]*)"/
+      );
 
     const channel =
+
       channelMatch?.[1] ||
+
+      html.match(
+        /"channelName":"([^"]*)"/
+      )?.[1] ||
+
       "YouTube";
+
+    /**
+     * CLEAN TITLE
+     */
+    const rawTitle =
+
+      titleMatch?.[1] ||
+
+      pageTitle?.[1]
+        ?.replace(/\s*-\s*YouTube$/, "") ||
+
+      "Unknown YouTube Video";
+
+    const cleanTitle =
+      rawTitle
+
+      .replace(/\\u0026/g, "&")
+      .replace(/\\n/g, " ")
+      .replace(/\\"/g, '"')
+      .trim();
+
+    console.log(
+  "PAGE TITLE:",
+  pageTitle?.[1]
+);
+
+console.log(
+  "HAS OG TITLE:",
+  html.includes("og:title")
+);
+
+console.log(
+  "HAS ownerChannelName:",
+  html.includes("ownerChannelName")
+);
+
+console.log(
+  "FIRST 500:",
+  html.substring(0, 500)
+);
 
     console.log(
       "YOUTUBE TITLE:",
-      title
+      cleanTitle
     );
 
     console.log(
@@ -435,9 +474,9 @@ async function getYouTubeData(url) {
     );
 
     return {
-  title: cleanTitle,
-  channel
-};
+      title: cleanTitle,
+      channel
+    };
 
   } catch (error) {
 
@@ -447,7 +486,6 @@ async function getYouTubeData(url) {
     );
 
     return {
-
       title:
         "Unknown YouTube Video",
 
@@ -456,7 +494,6 @@ async function getYouTubeData(url) {
     };
   }
 }
-
 /**
  * API
  */
