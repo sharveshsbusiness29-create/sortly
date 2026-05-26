@@ -655,6 +655,7 @@ IMPORTANT RULES:
 - No markdown
 - No explanation
 - Focus mainly on the TITLE like even if channel is from footballer for example they could be gaming therefore it should not be in sports becasue they are a footballer but in games because the video is about gaming
+-Cold football edits aren't comedia or media they are sports look out for edits of poeple, like footballers etc.
 - Use CHANNEL only as supporting context
 - Understand FULL CONTEXT of the title
 - A football challenge with a content creator is Media, not Sports
