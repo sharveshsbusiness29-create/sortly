@@ -556,6 +556,8 @@ Food
 Gaming
 Health
 Interviews
+Kindness
+Love
 Lifestyle
 Media
 Comedy
