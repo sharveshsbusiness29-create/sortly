@@ -369,128 +369,28 @@ async function getTikTokData(url) {
  */
 async function getYouTubeData(url) {
   try {
-
-    const finalUrl =
-      await expandUrl(url);
-
-    console.log(
-      "FINAL YOUTUBE URL:",
-      finalUrl
-    );
-
-    const response =
-      await axios.get(finalUrl, {
-
-        headers: {
-          "User-Agent":
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/122 Safari/537.36"
+    const res = await axios.get(
+      "https://www.youtube.com/oembed",
+      {
+        params: {
+          url,
+          format: "json"
         },
-
         timeout: 10000
-      });
-
-    const html =
-      response.data;
-
-    /**
-     * TITLE
-     */
-    const titleMatch =
-      html.match(
-        /<meta property="og:title" content="([^"]*)"/
-      );
-
-    const pageTitle =
-      html.match(
-        /<title>(.*?)<\/title>/
-      );
-
-    /**
-     * CHANNEL
-     */
-    const channelMatch =
-      html.match(
-        /"ownerChannelName":"([^"]*)"/
-      );
-
-    const channel =
-
-      channelMatch?.[1] ||
-
-      html.match(
-        /"channelName":"([^"]*)"/
-      )?.[1] ||
-
-      "YouTube";
-
-    /**
-     * CLEAN TITLE
-     */
-    const rawTitle =
-
-      titleMatch?.[1] ||
-
-      pageTitle?.[1]
-        ?.replace(/\s*-\s*YouTube$/, "") ||
-
-      "Unknown YouTube Video";
-
-    const cleanTitle =
-      rawTitle
-
-      .replace(/\\u0026/g, "&")
-      .replace(/\\n/g, " ")
-      .replace(/\\"/g, '"')
-      .trim();
-
-    console.log(
-  "PAGE TITLE:",
-  pageTitle?.[1]
-);
-
-console.log(
-  "HAS OG TITLE:",
-  html.includes("og:title")
-);
-
-console.log(
-  "HAS ownerChannelName:",
-  html.includes("ownerChannelName")
-);
-
-console.log(
-  "FIRST 500:",
-  html.substring(0, 500)
-);
-
-    console.log(
-      "YOUTUBE TITLE:",
-      cleanTitle
-    );
-
-    console.log(
-      "YOUTUBE CHANNEL:",
-      channel
+      }
     );
 
     return {
-      title: cleanTitle,
-      channel
+      title: res.data.title,
+      channel: res.data.author_name
     };
 
   } catch (error) {
-
-    console.log(
-      "YOUTUBE FETCH FAILED:",
-      error.message
-    );
+    console.log("YOUTUBE FAILED:", error.message);
 
     return {
-      title:
-        "Unknown YouTube Video",
-
-      channel:
-        "YouTube"
+      title: "Unknown YouTube Video",
+      channel: "YouTube"
     };
   }
 }
