@@ -638,6 +638,9 @@ gaming challenges, gaming collabs, walkthroughs
 IMPORTANT:
 - FIFA / FC / eFootball = Gaming ONLY
 
+Heartbreak:
+sad, divorce, breakup, bullying, hurt, crying out of sadness, loss
+
 Health:
 mental health, wellness, medical, therapy,
 nutrition, healthy living, self-care
@@ -744,6 +747,8 @@ Rules:
 - Make it natural English
 
 - Focus mainly on the TITLE; even if the channel is from a footballer, it could be gaming, therefore it should not be in Sports unless it is actual real-world sports content
+-Sometimes famous people will do challenges for example ronaldo doing football with mr Beast or Mark rober singers as well these should not go to music or sports they should go to media as it is with content creators.
+-Try to look at hashtags, if theren't any then use emojis to help you out
 - Cold football edits are Sports ONLY if they are focused on real athletes or real football moments (not memes, not creator content)
 -things like peoples glow up should come in lifestyle
 -things like house tour, dream holiday, dream house,dream car etc. should come in lifestyle
