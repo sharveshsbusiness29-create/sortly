@@ -836,14 +836,14 @@ const titleCompletion =
         role: 'user',
         content: `
 
-Create a short clean human-readable title.
+Create a short clean english human-readable title.
 
 Rules:
 - No markdown
 - No quotes
 - No explanation
 - Keep concise
-
+-make it always in english even if the video isn't make the title english
 Original Title:
 ${data.title}
 
