@@ -369,6 +369,8 @@ async function getTikTokData(url) {
  */
 async function getYouTubeData(url) {
 
+  
+
   try {
 
     const finalUrl =
@@ -397,32 +399,26 @@ async function getYouTubeData(url) {
     /**
      * TITLE
      */
-    const ogTitle =
-      html.match(
-        /<meta property="og:title" content="([^"]*)"/
-      );
+    const channelMatch = html.match(/"ownerChannelName":"([^"]*)"/);
 
     /**
      * CHANNEL
      */
-    const channelMatch =
-      html.match(
-        /"ownerChannelName":"([^"]*)"/
-      );
+    const channel =
+  channelMatch?.[1] ||
+  html.match(/"channelName":"([^"]*)"/)?.[1] ||
+  "YouTube";
 
     const pageTitle =
       html.match(
         /<title>(.*?)<\/title>/
       );
 
-    const title =
-
-      ogTitle?.[1] ||
-
-      pageTitle?.[1]
-        ?.replace(/\s*- YouTube$/, '') ||
-
-      "Unknown YouTube Video";
+    const cleanTitle = (title || "Unknown YouTube Video")
+  .replace(/\\u0026/g, "&")
+  .replace(/\\n/g, " ")
+  .replace(/\\"/g, '"')
+  .trim();
 
     const channel =
       channelMatch?.[1] ||
@@ -439,10 +435,9 @@ async function getYouTubeData(url) {
     );
 
     return {
-
-      title,
-      channel
-    };
+  title: cleanTitle,
+  channel
+};
 
   } catch (error) {
 
