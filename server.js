@@ -667,7 +667,7 @@ manifestation, spirituality, self-awareness
 
 Interviews:
 interviews, podcasts interviews,
-talk shows, guest conversations
+talk shows, guest conversations, conversations
 IMPORTANT RULES:
 - Return ONLY JSON
 - No markdown
@@ -707,6 +707,8 @@ IMPORTANT RULES:
 - If the title is in another language, translate it to English mentally before categorising
 
 -Footballer skills should come under football for example
+
+-If a video says chat with someone or conversation it means interview
 
 -Look at for popular character names such as cartoon ones in the title to sort them properly for example bluey and bingo would come in cartoons
 
