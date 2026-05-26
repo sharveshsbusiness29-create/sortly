@@ -743,6 +743,7 @@ Rules:
 -cute moments should come up in media
 -try to use other folder minimally things lie nonchalant celebrations normally fall unser sports so you can kind of roughly guess, but if u have no clue then only then put it in other
 -music videos of a movie especially indian ones should come under music not movie
+-clothing brands such as primark, next should come in fashion not in lifestyle, things like style for 30 pounds etc. is fashion not lifestyle
 
 - Use CHANNEL only as supporting context, never as the main deciding factor
 - Understand FULL CONTEXT of the title
