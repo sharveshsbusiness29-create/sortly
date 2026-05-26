@@ -724,10 +724,16 @@ talk shows, guest conversations, conversations
 
 Weather:
 weather, climate, temperature, snow, sun, rain, ice, thunder, lightning, storm, tornado
-IMPORTANT RULES:
-- Return ONLY JSON
+
+Create a short clean human-readable English title.
+
+Rules:
+- ALWAYS translate to English if the title is in another language
 - No markdown
+- No quotes
 - No explanation
+- Keep concise
+- Make it natural English
 
 - Focus mainly on the TITLE; even if the channel is from a footballer, it could be gaming, therefore it should not be in Sports unless it is actual real-world sports content
 - Cold football edits are Sports ONLY if they are focused on real athletes or real football moments (not memes, not creator content)
