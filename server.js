@@ -753,7 +753,7 @@ Rules:
 -music videos of a movie especially indian ones should come under music not movie
 -clothing brands such as primark, next should come in fashion not in lifestyle, things like style for 30 pounds etc. is fashion not lifestyle
 -make sure sports are matches and edits of footballers, football skills or shooting practice any thing else should come in media
-
+-success on its own is lifestyle however turning things into success or taking steps t success should be motivation
 
 - Use CHANNEL only as supporting context, never as the main deciding factor
 - Understand FULL CONTEXT of the title
