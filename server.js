@@ -640,6 +640,12 @@ Health:
 mental health, wellness, medical, therapy,
 nutrition, healthy living, self-care
 
+Kindness:
+kindness, heartwarming, helping others out, protecting others, giving
+
+Love:
+relationships, love, marriage, dream partner, wedding, valentine's day
+
 Lifestyle:
 daily life, routines, relationships, self improvement,
 fashion lifestyle, beauty, skincare, habits, glowup, house
@@ -744,6 +750,8 @@ Rules:
 -try to use other folder minimally things lie nonchalant celebrations normally fall unser sports so you can kind of roughly guess, but if u have no clue then only then put it in other
 -music videos of a movie especially indian ones should come under music not movie
 -clothing brands such as primark, next should come in fashion not in lifestyle, things like style for 30 pounds etc. is fashion not lifestyle
+-make sure sports are matches and edits of footballers, football skills or shooting practice any thing else should come in media
+
 
 - Use CHANNEL only as supporting context, never as the main deciding factor
 - Understand FULL CONTEXT of the title
