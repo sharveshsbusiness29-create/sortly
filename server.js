@@ -747,13 +747,14 @@ Rules:
 - Cold football edits are Sports ONLY if they are focused on real athletes or real football moments (not memes, not creator content)
 -things like peoples glow up should come in lifestyle
 -things like house tour, dream holiday, dream house,dream car etc. should come in lifestyle
+-success on its own is lifestyle however turning things such as insults into success or taking steps to success like becoming successful should be in motivation not other should be motivation
 -funny moments, reactions, hilarious reactions should come up in comedy
 -cute moments should come up in media
 -try to use other folder minimally things lie nonchalant celebrations normally fall unser sports so you can kind of roughly guess, but if u have no clue then only then put it in other
 -music videos of a movie especially indian ones should come under music not movie
 -clothing brands such as primark, next should come in fashion not in lifestyle, things like style for 30 pounds etc. is fashion not lifestyle
 -make sure sports are matches and edits of footballers, football skills or shooting practice any thing else should come in media
--success on its own is lifestyle however turning things into success or taking steps t success should be motivation
+
 
 - Use CHANNEL only as supporting context, never as the main deciding factor
 - Understand FULL CONTEXT of the title
