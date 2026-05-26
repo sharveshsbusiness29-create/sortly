@@ -602,7 +602,7 @@ nutrition, healthy living, self-care
 
 Lifestyle:
 daily life, routines, relationships, self improvement,
-fashion lifestyle, beauty, skincare, habits
+fashion lifestyle, beauty, skincare, habits, glowup, house
 
 Media:
 entertainment culture, influencer content,
@@ -685,6 +685,8 @@ IMPORTANT RULES:
 
 - Focus mainly on the TITLE; even if the channel is from a footballer, it could be gaming, therefore it should not be in Sports unless it is actual real-world sports content
 - Cold football edits are Sports ONLY if they are focused on real athletes or real football moments (not memes, not creator content)
+-things like peoples glow up should come in lifestyle
+-things like house tour, dream holiday, dream house,dream car etc. should come in lifestyle
 
 - Use CHANNEL only as supporting context, never as the main deciding factor
 - Understand FULL CONTEXT of the title
