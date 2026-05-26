@@ -686,6 +686,10 @@ IMPORTANT RULES:
 
 - If the title is in another language, translate it to English mentally before categorising
 
+-Footballer skills should come under football for example
+
+-Look at for popular character names such as cartoon ones in the title to sort them properly
+
 - FINAL RULE:
   If you cannot confidently classify the content into a category based on the title, ALWAYS return:
   "Other"
