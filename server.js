@@ -670,6 +670,7 @@ IMPORTANT RULES:
 - Sometimes movie names contain other folders for example movie cars has should be in the Movies folder instead of automotive, also in the title there will be production companies, if you see those then it is a movie, but also for cars theere are series so lookk out ok
 - Sometimes famous footballers will do challenges with content creators like guess the footballer this means that the video shou;ld go to media not sports becasue sports is only for matches, highlights and general sports activities or information not these content challenges
 -If something is a compilation like funny compilation then it should go to media
+-If the title is in another language try and translate it into english, not all titles are going to be english
 
 Example:
 {
