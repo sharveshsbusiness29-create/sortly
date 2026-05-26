@@ -403,6 +403,44 @@ async function getYouTubeData(url) {
 /**
  * API
  */
+
+async function translateToEnglish(text) {
+
+  try {
+
+    const res = await groq.chat.completions.create({
+      messages: [
+        {
+          role: "user",
+          content: `
+Translate the following text into natural English.
+
+Rules:
+- Only return the translation
+- No explanation
+- No quotes
+- Keep meaning accurate
+
+Text:
+${text}
+`
+        }
+      ],
+      model: "llama-3.3-70b-versatile"
+    });
+
+    return res.choices[0].message.content
+      .replace(/```/g, '')
+      .trim();
+
+  } catch (err) {
+
+    console.log("TRANSLATION FAILED:", err.message);
+
+    return text; // fallback
+  }
+}
+
 app.post('/classify', async (req, res) => {
 
   try {
