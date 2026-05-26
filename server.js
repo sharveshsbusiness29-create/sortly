@@ -648,19 +648,47 @@ manifestation, spirituality, self-awareness
 Interviews:
 interviews, podcasts interviews,
 talk shows, guest conversations
-
 IMPORTANT RULES:
-1. Output Format: Return ONLY valid JSON. Absolutely NO markdown block formatting (do not use ```json), NO conversational filler, and NO explanations.
-2. Translation: If the title is in a language other than English, translate it to English mentally before analyzing context.
-3. Core Logic: Prioritize the FULL CONTEXT of the TITLE over the CHANNEL. Use the channel name strictly as supporting context or as a tie-breaker fallback if the title is ambiguous (e.g., if the title is vague but the channel is a known musician, map to "Music"). If completely unable to determine a category, default to "Other".
+- Return ONLY JSON
+- No markdown
+- No explanation
 
-FOLDER CLASSIFICATION RULES:
-- Sports vs. Media: "Sports" is strictly for actual physical matches, gameplay, professional highlights, professional athletes, or physical sports events. "Cold football edits" or hype reels of athletes belong in "Sports". Content creator challenges with athletes (e.g., "Guess the Footballer" or skill challenges) belong in "Media".
-- Comedy vs. Media: Purely humorous content like standalone pranks, skits, and memes belong in "Comedy". General entertainment-style creator content and compiled content (e.g., "funny compilation") belong in "Media".
-- Movies vs. Automotive/Series: If a title references a film property (look for film production company names or specific movie titles like "Cars"), sort it into "Movies" or "Series" instead of "Automotive".
-- Tech vs. Photography: If a title looks tech-oriented or automated but has no explicit mention or context of AI/Artificial Intelligence, categorize it under "Photography".
-- Misleading Keywords: Do NOT auto-categorize keywords. "Live" and "Interviews" do NOT automatically mean "News". Map interviews to "Interviews" and assess live content by its true topic context.
+- Focus mainly on the TITLE; even if the channel is from a footballer, it could be gaming, therefore it should not be in Sports unless it is actual real-world sports content
+- Cold football edits are Sports ONLY if they are focused on real athletes or real football moments (not memes, not creator content)
 
+- Use CHANNEL only as supporting context, never as the main deciding factor
+- Understand FULL CONTEXT of the title
+
+- NEVER default to Music under any circumstances
+- If the category is unclear, ambiguous, or mixed, choose the most logical real-world interpretation
+- If no category clearly fits, ALWAYS use Other (do NOT guess Music or any popular category)
+
+- A football challenge with a content creator is Media, not Sports
+- A funny prank is Comedy, not Media
+- Sports is strictly real matches, highlights, professional athletes, tournaments, or real gameplay of physical sports
+- Gaming content (FIFA, FC, eFootball, Fortnite, etc.) is Gaming, not Sports
+
+- If a video title has no clear AI/tech meaning, do NOT assume Photography; only use Photography for actual filming, cinematography, cameras, editing, or visual production content
+
+- Interviews are NOT automatically News; classify based on topic context
+
+- If unsure of category, use Other (do NOT guess a random category)
+
+- "Live" does NOT automatically mean News
+
+- Entertainment-style creator content belongs in Media
+
+- Sometimes movie titles (e.g. Cars) belong in Movies, not Automotive
+
+- Look for production companies or film indicators in titles to classify Movies correctly
+
+- Compilation content (e.g. funny compilations) belongs in Media
+
+- If the title is in another language, translate it to English mentally before categorising
+
+- FINAL RULE:
+  If you cannot confidently classify the content into a category based on the title, ALWAYS return:
+  "Other"
 Example:
 {
   "folder": "Music"
