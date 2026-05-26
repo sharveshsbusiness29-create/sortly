@@ -729,6 +729,8 @@ IMPORTANT RULES:
 - Cold football edits are Sports ONLY if they are focused on real athletes or real football moments (not memes, not creator content)
 -things like peoples glow up should come in lifestyle
 -things like house tour, dream holiday, dream house,dream car etc. should come in lifestyle
+-funny moments, reactions, hilarious reactions should come up in comedy
+-cute moments should come up in media
 
 - Use CHANNEL only as supporting context, never as the main deciding factor
 - Understand FULL CONTEXT of the title
