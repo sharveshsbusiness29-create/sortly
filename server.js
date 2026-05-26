@@ -501,8 +501,10 @@ Return ONLY valid JSON.
 Choose ONE folder from this list ONLY:
 
 AI
+Art
 Automotive
 Business
+Cartoons
 Coding
 Education
 Fitness
@@ -537,6 +539,9 @@ AI:
 artificial intelligence, chatgpt, openai, gpt, llm,
 machine learning, neural networks, automation, agents, prompts
 
+Art:
+picture, painting, drawing, watercolours, grafiti
+
 Automotive:
 cars, bikes, motorcycles, supercars, f1, racing,
 engines, drifting, tesla, bmw, ferrari, automotive reviews
@@ -544,6 +549,21 @@ engines, drifting, tesla, bmw, ferrari, automotive reviews
 Business:
 startups, entrepreneurship, marketing, ecommerce,
 sales, money making, investing, branding, finance, side hustles
+
+Cartoons:
+bluey, bingo, bandit heeler, chilli heeler, blue heeler,
+spongebob squarepants, patrick star, squidward, mr krabs,
+tom and jerry, bugs bunny, daffy duck, mickey mouse, donald duck, goofy,
+minions, despicable me, gru, shrek, kung fu panda, madagascar,
+rick and morty, simpsons, homer simpson, bart simpson, family guy,
+south park, stan marsh, kyle broflovski, eric cartman, kenny mccormick,
+adventure time, finn the human, jake the dog,
+teen titans go, ben 10 original series, gwen tennyson, four arms,
+regular show, mordecai, rigby,
+gravity falls, dipper pines, mabel pines,
+looney tunes, cartoon network originals,
+animated kids series, children's animation, preschool animation,
+full cartoon episode, cartoon episode clip, animated series episode,
 
 Coding:
 programming, software engineering, javascript,
@@ -688,7 +708,7 @@ IMPORTANT RULES:
 
 -Footballer skills should come under football for example
 
--Look at for popular character names such as cartoon ones in the title to sort them properly
+-Look at for popular character names such as cartoon ones in the title to sort them properly for example bluey and bingo would come in cartoons
 
 - FINAL RULE:
   If you cannot confidently classify the content into a category based on the title, ALWAYS return:
