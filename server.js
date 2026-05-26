@@ -575,6 +575,7 @@ Series
 Spirituality
 Other
 Uncategorized
+Weather
 
 
 CATEGORY GUIDELINES:
@@ -716,6 +717,9 @@ manifestation, spirituality, self-awareness
 Interviews:
 interviews, podcasts interviews,
 talk shows, guest conversations, conversations
+
+Weather:
+weather, climate, temperature, snow, sun, rain, ice, thunder, lightning, storm, tornado
 IMPORTANT RULES:
 - Return ONLY JSON
 - No markdown
