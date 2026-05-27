@@ -756,6 +756,7 @@ Rules:
 - Make it natural English
 
 - Focus mainly on the TITLE; even if the channel is from a footballer, it could be gaming, therefore it should not be in Sports unless it is actual real-world sports content
+-Kindness of someone like a person goes into kindness
 -Hard work is motivation
 -Sometimes famous people will do challenges for example ronaldo doing football with mr Beast or Mark rober singers as well these should not go to music or sports they should go to media as it is with content creators.
 -Try to look at hashtags, if theren't any then use emojis to help you out
