@@ -758,6 +758,9 @@ Rules:
 - Cold football edits are Sports ONLY if they are focused on real athletes or real football moments (not memes, not creator content)
 -things like peoples glow up should come in lifestyle
 -things like house tour, dream holiday, dream house,dream car etc. should come in lifestyle
+-things like finding the right person you deserve is love, finding my soulmate is examples of love
+-girls or boys giving loving looks is love
+-things not easily built is motivation
 -success on its own is lifestyle however turning things such as insults into success or taking steps to success like becoming successful should be in motivation not other should be motivation
 -funny moments, reactions, hilarious reactions should come up in comedy
 -cute moments should come up in media
