@@ -545,42 +545,58 @@ Return ONLY valid JSON.
 Choose ONE folder from this list ONLY:
 
 AI
+Anime
+Animals
 Art
+ASMR
 Automotive
 Aerospace
 Business
 Cartoons
 Coding
+Comedy
 Commerce
+Crime
+Dance
+DIY
 Education
+Fashion
+Finance
 Fitness
 Food
 Gaming
-Heartbreak
 Health
+Heartbreak
+History
+Horror
 Interviews
 Kindness
-Love
 Lifestyle
-Media
-Comedy
+Love
+Luxury
 Magic
+MartialArts
+Media
+Memes
 Motivation
 Movies
 Music
 Nature
 News
+Other
+Pets
+Philosophy
+Photography
 Podcasts
+Religion
 Respect
+Science
+Series
 Social
 Sports
+Spirituality
 Tech
 Travel
-Fashion
-Photography
-Series
-Spirituality
-Other
 Uncategorized
 Weather
 
@@ -590,165 +606,269 @@ CATEGORY GUIDELINES:
 
 AI:
 artificial intelligence, chatgpt, openai, gpt, llm,
-machine learning, neural networks, automation, agents, prompts
+machine learning, neural networks, automation,
+ai agents, prompts, generative ai
+
+Anime:
+anime, naruto, one piece, dragon ball,
+attack on titan, demon slayer, jujutsu kaisen,
+anime edits, manga, otaku, anime fights
+
+Animals:
+wild animals, animal rescues, wildlife,
+animal facts, safari, zoo animals,
+bbc earth animals, marine animals
 
 Art:
-picture, painting, drawing, watercolours, grafiti
+painting, drawing, sketching, digital art,
+watercolor, graffiti, illustration,
+art process, speedpaint
+
+ASMR:
+asmr, whispering, tapping, slime,
+soap cutting, satisfying sounds,
+sleep sounds, relaxing audio
 
 Automotive:
-cars, bikes, motorcycles, supercars, f1, racing,
-engines, drifting, tesla, bmw, ferrari, automotive reviews
+cars, bikes, motorcycles, supercars,
+f1, drifting, engines, tesla, ferrari,
+bmw, automotive reviews
 
 Aerospace:
-planes, flights, fighter jets, rockets, satellites, out of space exploration
+planes, fighter jets, rockets,
+satellites, nasa, spacex,
+aviation, aircrafts, space exploration
 
 Business:
-startups, entrepreneurship, marketing, ecommerce,
-sales, money making, investing, branding, finance, side hustles
+startups, entrepreneurship, branding,
+marketing, ecommerce, side hustles,
+company growth, business mindset
 
 Cartoons:
-bluey, bingo, bandit heeler, chilli heeler, blue heeler,
-spongebob squarepants, patrick star, squidward, mr krabs,
-tom and jerry, bugs bunny, daffy duck, mickey mouse, donald duck, goofy,
-minions, despicable me, gru, shrek, kung fu panda, madagascar,
-rick and morty, simpsons, homer simpson, bart simpson, family guy,
-south park, stan marsh, kyle broflovski, eric cartman, kenny mccormick,
-adventure time, finn the human, jake the dog,
-teen titans go, ben 10 original series, gwen tennyson, four arms,
-regular show, mordecai, rigby,
-gravity falls, dipper pines, mabel pines,
-looney tunes, cartoon network originals,
-animated kids series, children's animation, preschool animation,
-full cartoon episode, cartoon episode clip, animated series episode,
+bluey, bingo, spongebob, tom and jerry,
+simpsons, family guy, cartoon network,
+animated kids shows, disney cartoons,
+looney tunes, animated series
 
 Coding:
-programming, software engineering, javascript,
-python, java, kotlin, c++, github, APIs, web development, apps
-
-Commerce:
-buying, bought items, sales, trending items, sold out
-
-Education:
-tutorials, explainers, documentaries, science,
-history, maths, lectures, courses, learning content
-
-Fitness:
-gym, workouts, bodybuilding, exercise,
-strength training, cardio, weight loss, nutrition training
-
-Food:
-recipes, cooking, chefs, restaurants,
-street food, baking, food reviews, mukbang
-
-Gaming:
-video games, gameplay, esports, streaming,
-minecraft, fortnite, valorant, gta, fifa, fc, efootball,
-gaming challenges, gaming collabs, walkthroughs
-
-IMPORTANT:
-- FIFA / FC / eFootball = Gaming ONLY
-
-Heartbreak:
-sad, divorce, breakup, bullying, hurt, crying out of sadness, loss
-
-Health:
-mental health, wellness, medical, therapy,
-nutrition, healthy living, self-care
-
-Kindness:
-kindness, heartwarming, helping others out, protecting others, giving
-
-Love:
-relationships, love, marriage, dream partner, wedding, valentine's day
-
-Lifestyle:
-daily life, routines, relationships, self improvement,
-fashion lifestyle, beauty, skincare, habits, glowup, house
-
-Media:
-entertainment culture, influencer content,
-youtube drama, celebrity news, reactions,
-internet culture, viral content, commentary, fan edits
+programming, javascript, python, kotlin,
+java, c++, github, web development,
+software engineering, coding tutorials
 
 Comedy:
-memes, skits, pranks, trolling, parody,
-standup, funny compilations, joke content, humor, shitposts, tickles
+memes, skits, funny videos, trolling,
+parody, standup comedy, joke content,
+funny reactions, humor
 
-Motivation:
-discipline, success, self improvement,
-mindset, productivity, inspiration, grind culture, hard work
+Commerce:
+shopping, bought items, sales,
+sold out products, trending products,
+unboxing, purchases
 
-Movies:
-films, movie trailers, cinema, actors,
-blockbusters, film clips, production, behind the scenes
+Crime:
+true crime, interrogations, police footage,
+mafia, investigations, criminal cases,
+court cases, prison stories
 
-Respect:
-respect, respect moments, respecting others, respect to women, respect to elders
+Dance:
+dance videos, choreography, hip hop dance,
+tiktok dances, ballet, breakdancing,
+dance performances
 
-Series:
-tv shows, episodes, streaming series,
-netflix shows, web series, serials
+DIY:
+woodworking, crafts, building projects,
+home diy, restoration, handmade projects,
+repair videos
 
-Magic:
-magic tricks, magic shows
-
-Music:
-songs, rap, albums, beats, playlists,
-concerts, remixes, music videos
-
-Nature:
-nature, animals, plants, new animal species, bbc earth
-
-News:
-breaking news, world events, politics,
-current affairs, global updates, reports
-
-Podcasts:
-podcasts, long-form conversations,
-talk shows, interviews, discussions
-
-Social:
-tiktok, instagram, influencers,
-content creators, online culture, social media trends
-
-Sports:
-real-world sports only:
-football matches, basketball, cricket, boxing, UFC,
-tennis, tournaments, leagues, highlights, goals, athletes
-
-IMPORTANT:
-- REAL sports events ONLY
-- NO sports video games
-- NO creator challenges with athletes
-- NO memes/reactions belong here
-
-Tech:
-technology, gadgets, software, smartphones,
-laptops, reviews, AI hardware, apps, innovations
-
-Travel:
-travel, countries, flights, hotels,
-vacations, tourism, adventures
+Education:
+tutorials, explainers, learning,
+documentaries, lectures, courses,
+maths, science lessons, history lessons
 
 Fashion:
-streetwear, outfits, clothing, brands,
-style, designer, fashion shows
+streetwear, outfits, clothing brands,
+designer fashion, styling, fashion shows,
+fashion hauls
 
-Photography:
-cinematography, cameras, videography,
-filmmaking, editing, colour grading, visual storytelling
+Finance:
+investing, stocks, crypto, trading,
+passive income, financial advice,
+stock market, money investing
 
-Spirituality:
-meditation, mindfulness, religion,
-manifestation, spirituality, self-awareness
+Fitness:
+gym, workouts, bodybuilding,
+exercise, cardio, strength training,
+weight loss, fitness motivation
+
+Food:
+recipes, cooking, baking,
+street food, restaurants, mukbang,
+food reviews
+
+Gaming:
+minecraft, fortnite, gta, fifa,
+fc, valorant, gameplay, esports,
+gaming challenges, walkthroughs
+
+Health:
+mental health, wellness, nutrition,
+medical advice, therapy, healthy living
+
+Heartbreak:
+breakups, sadness, divorce,
+emotional pain, crying, loneliness,
+loss, heartbreak edits
+
+History:
+historical events, ancient civilizations,
+wars, kings, empires, ww2,
+historical documentaries
+
+Horror:
+horror, scary, creepy, haunted,
+ghosts, paranormal, demons,
+jumpscares, analog horror,
+backrooms, disturbing videos
 
 Interviews:
-interviews, podcasts interviews,
-talk shows, guest conversations, conversations
+interviews, conversations, podcasts,
+guest talks, talk shows,
+celebrity interviews
+
+Kindness:
+helping others, generosity,
+heartwarming moments, saving people,
+charity, caring moments
+
+Lifestyle:
+daily life, routines, skincare,
+beauty, glow ups, self care,
+house tours, habits, vlogs
+
+Love:
+relationships, romance, weddings,
+soulmates, dating, romantic moments,
+love stories
+
+Luxury:
+mansions, yachts, rolex,
+bugatti lifestyle, luxury homes,
+rich lifestyle, billionaire lifestyle
+
+Magic:
+magic tricks, illusions,
+magic performances, street magic
+
+MartialArts:
+karate, kung fu, taekwondo,
+mma training, self defense,
+martial arts fights
+
+Media:
+internet culture, reactions,
+creator content, youtube drama,
+fan edits, celebrity culture,
+viral content, commentary
+
+Memes:
+brainrot, sigma edits,
+skibidi, meme edits,
+viral memes, absurd humor
+
+Motivation:
+discipline, hard work,
+success mindset, productivity,
+self improvement, grind culture
+
+Movies:
+films, cinema, movie trailers,
+actors, behind the scenes,
+film clips, blockbuster movies
+
+Music:
+songs, rap, albums,
+music videos, remixes,
+concerts, beats, playlists
+
+Nature:
+forests, oceans, mountains,
+nature scenery, landscapes,
+natural disasters, earth documentaries
+
+News:
+breaking news, politics,
+current affairs, world events,
+global updates, news reports
+
+Pets:
+cats, dogs, parrots,
+cute pets, pet care,
+funny pet videos
+
+Philosophy:
+stoicism, nihilism,
+deep thoughts, existentialism,
+philosophical discussions
+
+Photography:
+cinematography, cameras,
+videography, filmmaking,
+editing, colour grading
+
+Podcasts:
+long-form conversations,
+discussion podcasts,
+podcast clips
+
+Religion:
+christianity, islam, hinduism,
+bible, quran, temples,
+churches, religious teachings
+
+Respect:
+respect moments, respecting elders,
+sportsmanship, respectful acts
+
+Science:
+physics, chemistry, biology,
+space science, experiments,
+scientific discoveries
+
+Series:
+tv shows, netflix series,
+episodes, web series,
+streaming shows
+
+Social:
+tiktok trends, influencers,
+instagram culture, online trends,
+social media content
+
+Sports:
+football, basketball, cricket,
+ufc, boxing, tennis,
+sports highlights, athletes,
+matches, goals, tournaments
+
+Spirituality:
+manifestation, meditation,
+mindfulness, energy healing,
+spiritual awakening
+
+Tech:
+technology, gadgets,
+smartphones, laptops,
+software reviews, ai hardware
+
+Travel:
+vacations, tourism, flights,
+countries, adventures,
+travel vlogs
 
 Weather:
-weather, climate, temperature, snow, sun, rain, ice, thunder, lightning, storm, tornado
-
+storms, rain, snow,
+thunder, lightning,
+tornadoes, climate
 Create a short clean human-readable English title.
 
 Rules:
