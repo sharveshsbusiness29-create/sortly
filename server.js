@@ -899,7 +899,7 @@ Rules:
 
 - Focus mainly on the TITLE; even if the channel is from a footballer, it could be gaming, 
 therefore it should not be in Sports unless it is actual real-world sports content
--If there are videos of content creators going to places this should come into social media folder
+-If there are videos of content creators going to places this should come into social media folder for example marlon going to turkey should be social media
 -Things like 1 minute cahllenges or who threw it cahllenges as a group aren't comedy they come into games regardless of emojis used
 -Kindness of someone like a person goes into kindness
 -Things like army should come in nation
