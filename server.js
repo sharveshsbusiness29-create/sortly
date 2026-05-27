@@ -598,6 +598,9 @@ Automotive:
 cars, bikes, motorcycles, supercars, f1, racing,
 engines, drifting, tesla, bmw, ferrari, automotive reviews
 
+Aerospace:
+planes, flights, fighter jets, rockets, satellites, out of space exploration
+
 Business:
 startups, entrepreneurship, marketing, ecommerce,
 sales, money making, investing, branding, finance, side hustles
