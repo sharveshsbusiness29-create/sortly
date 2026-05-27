@@ -577,7 +577,7 @@ Love
 Luxury
 Magic
 MartialArts
-Media
+Social Media
 Memes
 Motivation
 Movies
@@ -776,7 +776,7 @@ karate, kung fu, taekwondo,
 mma training, self defense,
 martial arts fights
 
-Media:
+Social Media:
 internet culture, reactions,
 creator content, youtube drama,
 fan edits, celebrity culture,
