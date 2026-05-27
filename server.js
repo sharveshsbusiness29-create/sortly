@@ -753,7 +753,7 @@ beauty, glow ups, self care,
 house tours, habits, vlogs
 
 Friendship:
-best friends, frienship, bff, homie
+best friends, frienship, bff, homie, friends
 
 
 Love:
@@ -900,6 +900,7 @@ Rules:
 - Focus mainly on the TITLE; even if the channel is from a footballer, it could be gaming, therefore it should not be in Sports unless it is actual real-world sports content
 -Kindness of someone like a person goes into kindness
 -Things like army should come in nation
+-Friends and friendship should come in friendship folder
 -Hard work is motivation
 -Makeup and beauty goes into fashion
 -Sometimes famous people will do challenges for example ronaldo doing football with mr Beast or Mark rober singers as well these should not go to music or sports they should go to media as it is with content creators.
