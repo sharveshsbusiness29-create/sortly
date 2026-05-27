@@ -565,7 +565,7 @@ Fashion
 Finance
 Fitness
 Food
-Gaming
+Games
 Health
 Heartbreak
 History
@@ -712,7 +712,7 @@ recipes, cooking, baking,
 street food, restaurants, mukbang,
 food reviews
 
-Gaming:
+Games:
 minecraft, fortnite, gta, fifa,
 fc, valorant, gameplay, esports,
 gaming challenges, walkthroughs
@@ -897,7 +897,9 @@ Rules:
 - Keep concise
 - Make it natural English
 
-- Focus mainly on the TITLE; even if the channel is from a footballer, it could be gaming, therefore it should not be in Sports unless it is actual real-world sports content
+- Focus mainly on the TITLE; even if the channel is from a footballer, it could be gaming, 
+therefore it should not be in Sports unless it is actual real-world sports content
+-Things like 1 minute cahllenges or who threw it cahllenges as a group aren't comedy they come into games regardless of emojis used
 -Kindness of someone like a person goes into kindness
 -Things like army should come in nation
 -Friends and friendship should come in friendship folder
