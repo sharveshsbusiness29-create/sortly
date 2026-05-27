@@ -591,6 +591,7 @@ Podcasts
 Religion
 Respect
 Science
+Stories
 Series
 Social
 Sports
@@ -850,6 +851,9 @@ football, basketball, cricket,
 ufc, boxing, tennis,
 sports highlights, athletes,
 matches, goals, tournaments
+
+Stories:
+story, story telling, recount, made up story, animated pretend story
 
 Spirituality:
 manifestation, meditation,
