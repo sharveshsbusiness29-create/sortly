@@ -585,6 +585,7 @@ Music
 Nature
 Nation
 News
+Friendship
 Other
 Pets
 Philosophy
@@ -750,6 +751,10 @@ Lifestyle:
 daily life, routines, skincare,
 beauty, glow ups, self care,
 house tours, habits, vlogs
+
+Friendship:
+best friends, frienship, bff, homie
+
 
 Love:
 relationships, romance, weddings,
