@@ -550,6 +550,7 @@ Automotive
 Business
 Cartoons
 Coding
+Commerce
 Education
 Fitness
 Food
@@ -619,6 +620,9 @@ Coding:
 programming, software engineering, javascript,
 python, java, kotlin, c++, github, APIs, web development, apps
 
+Commerce:
+buying, bought items, sales, trending items, sold out
+
 Education:
 tutorials, explainers, documentaries, science,
 history, maths, lectures, courses, learning content
@@ -667,7 +671,7 @@ standup, funny compilations, joke content, humor, shitposts, tickles
 
 Motivation:
 discipline, success, self improvement,
-mindset, productivity, inspiration, grind culture
+mindset, productivity, inspiration, grind culture, hard work
 
 Movies:
 films, movie trailers, cinema, actors,
@@ -748,6 +752,7 @@ Rules:
 - Make it natural English
 
 - Focus mainly on the TITLE; even if the channel is from a footballer, it could be gaming, therefore it should not be in Sports unless it is actual real-world sports content
+-Hard work is motivation
 -Sometimes famous people will do challenges for example ronaldo doing football with mr Beast or Mark rober singers as well these should not go to music or sports they should go to media as it is with content creators.
 -Try to look at hashtags, if theren't any then use emojis to help you out
 - Cold football edits are Sports ONLY if they are focused on real athletes or real football moments (not memes, not creator content)
