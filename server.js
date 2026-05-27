@@ -556,6 +556,7 @@ Cartoons
 Coding
 Comedy
 Commerce
+Chess
 Crime
 Dance
 DIY
@@ -665,6 +666,9 @@ Commerce:
 shopping, bought items, sales,
 sold out products, trending products,
 unboxing, purchases
+
+Chess:
+chess players, chess board, chess moves
 
 Crime:
 true crime, interrogations, police footage,
@@ -916,6 +920,7 @@ Rules:
 - A funny prank is Comedy, not Media
 - Sports is strictly real matches, highlights, professional athletes, tournaments, or real gameplay of physical sports
 - Gaming content (FIFA, FC, eFootball, Fortnite, etc.) is Gaming, not Sports
+-For movies look at the title things like singing movies should not come in music they should come in singing look at character names etc.
 
 - If a video title has no clear AI/tech meaning, do NOT assume Photography; only use Photography for actual filming, cinematography, cameras, editing, or visual production content
 
