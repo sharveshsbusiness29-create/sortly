@@ -904,6 +904,7 @@ therefore it should not be in Sports unless it is actual real-world sports conte
 -Things like amazing construction moments should be put into social media folder
 -Kindness of someone like a person goes into kindness
 -Things like army should come in nation
+-things like ice formations or natural formations like valleys, rainforests etc.
 -Friends and friendship should come in friendship folder
 -Hard work is motivation
 -Makeup and beauty goes into fashion
