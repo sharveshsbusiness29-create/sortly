@@ -583,6 +583,7 @@ Motivation
 Movies
 Music
 Nature
+Books
 Nation
 News
 Friendship
@@ -843,6 +844,9 @@ churches, religious teachings
 Respect:
 respect moments, respecting elders,
 sportsmanship, respectful acts
+
+Books:
+books, story books, novels, fiction, non-fiction, autobiography
 
 Science:
 physics, chemistry, biology,
