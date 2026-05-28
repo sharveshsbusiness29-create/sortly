@@ -584,6 +584,7 @@ Movies
 Music
 Nature
 Books
+Beauty
 Nation
 News
 Friendship
@@ -792,6 +793,9 @@ Motivation:
 discipline, hard work,
 success mindset, productivity,
 self improvement, grind culture
+
+Beauty:
+beauty, beauty secrets, makeup, appearance secrets, glow up
 
 Movies:
 films, cinema, movie trailers,
