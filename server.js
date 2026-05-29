@@ -908,6 +908,7 @@ Rules:
 - Focus mainly on the TITLE; even if the channel is from a footballer, it could be gaming, 
 therefore it should not be in Sports unless it is actual real-world sports content
 -If there are videos of content creators going to places this should come into social media folder for example marlon going to turkey should be social media
+-Things like skincare routines, haircuts, general grooming or glowups should come in beauty
 -Things like 1 minute cahllenges or who threw it challenges as a group aren't comedy they come into games regardless of emojis used also guessing the country games etc. should be put into games folders. Overall, doing challenges or playing guessing games should be put into games folder
 -Things like amazing construction moments should be put into social media folder
 -Kindness of someone like a person goes into kindness
