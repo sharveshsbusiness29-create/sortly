@@ -621,6 +621,8 @@ Uncategorized
 Vocab
 Weather
 Other
+Articles
+Courses
 
 
 CATEGORY GUIDELINES:
@@ -629,6 +631,19 @@ CATEGORY GUIDELINES:
 Politics:
 government, elections, parliament, prime minister, president,
 political debates, policies, geopolitics, diplomacy
+
+Articles:
+blog posts, medium articles, magazine articles,
+opinion pieces, editorials, tutorials, written guides,
+Substack posts, essays, long-form web content,
+documentation articles, educational writeups
+
+Courses:
+online courses, tutorials, lectures, bootcamps,
+Udemy, Coursera, edX, Khan Academy,
+Skillshare, Brilliant, Codecademy,
+roadmaps, complete beginner guides,
+full learning playlists, certification courses
 
 Beauty:
 makeup, skincare, haircare, grooming, glow ups,
@@ -724,6 +739,10 @@ therefore it should not be in Sports unless it is actual real-world sports conte
 -If there is something funny but is tamil, it should go in tamil reels any videos in tamil should go in tamil reels.
 -If there are videos of content creators going to places this should come into social media folder for example marlon going to turkey should be social media
 -Things like skincare routines, haircuts, general grooming or glowups should come in beauty
+-Papers should be like theseresearch papers, academic papers, arXiv,
+journals, publications
+-courses should be things like masterclasses, course promo videos, crash course etc.
+-Articles should include things like blogs, magazine articles, posts not news articles though that should come in news
 -Things like 1 minute cahllenges or who threw it challenges as a group aren't comedy they come into games regardless of emojis used also guessing the country games etc. should be put into games folders. Overall, doing challenges or playing guessing games should be put into games folder
 -Things like amazing construction moments should be put into social media folder
 -Kindness of someone like a person goes into kindness
