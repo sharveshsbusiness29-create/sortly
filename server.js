@@ -739,7 +739,7 @@ therefore it should not be in Sports unless it is actual real-world sports conte
 -If there is something funny but is tamil, it should go in tamil reels any videos in tamil should go in tamil reels.
 -If there are videos of content creators going to places this should come into social media folder for example marlon going to turkey should be social media
 -Things like skincare routines, haircuts, general grooming or glowups should come in beauty
--Papers should be like research papers (tips how to write them etc.), academic papers, arXiv,
+-Papers should be like research papers (tips how to write them etc.), academic papers, arXiv, anything to do with research papers if it has it in the title should go nto papers
 journals, publications
 -courses should be things like masterclasses, course promo videos, crash course etc.
 -Articles should include things like blogs, magazine articles, posts not news articles though that should come in news
