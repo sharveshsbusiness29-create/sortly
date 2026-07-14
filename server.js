@@ -544,13 +544,21 @@ Return ONLY valid JSON.
 
 Choose ONE folder from this list ONLY:
 
+Choose ONE folder from this list ONLY:
+
 AI
+AI-ML
+AI-LLM
+AI-Vision
+AI-Robotics
 Anime
 Animals
 Art
 ASMR
 Automotive
 Aerospace
+Beauty
+Books
 Business
 Cartoons
 Coding
@@ -561,13 +569,17 @@ Crime
 Dance
 DIY
 Education
+11+
+English
 Fashion
 Finance
 Fitness
 Food
 Games
+Habits
 Health
 Heartbreak
+High School
 History
 Horror
 Interviews
@@ -577,325 +589,132 @@ Love
 Luxury
 Magic
 MartialArts
-Social Media
+Maths
 Memes
 Motivation
 Movies
 Music
-Nature
-Books
-Beauty
 Nation
+Nature
 News
-Friendship
-Other
+Papers
 Pets
 Philosophy
 Photography
 Podcasts
+Politics
+Quant
 Religion
 Respect
 Science
-Stories
 Series
 Social
+Social Media
 Sports
 Spirituality
+Stocks
+Tamil
+Tamil Reels
 Tech
 Travel
+University
 Uncategorized
+Vocab
 Weather
+Other
 
 
 CATEGORY GUIDELINES:
 
 
-AI:
-artificial intelligence, chatgpt, openai, gpt, llm,
-machine learning, neural networks, automation,
-ai agents, prompts, generative ai
-
-Anime:
-anime, naruto, one piece, dragon ball,
-attack on titan, demon slayer, jujutsu kaisen,
-anime edits, manga, otaku, anime fights
-
-Animals:
-wild animals, animal rescues, wildlife,
-animal facts, safari, zoo animals,
-bbc earth animals, marine animals
-
-Art:
-painting, drawing, sketching, digital art,
-watercolor, graffiti, illustration,
-art process, speedpaint
-
-ASMR:
-asmr, whispering, tapping, slime,
-soap cutting, satisfying sounds,
-sleep sounds, relaxing audio
-
-Automotive:
-cars, bikes, motorcycles, supercars,
-f1, drifting, engines, tesla, ferrari,
-bmw, automotive reviews
-
-Aerospace:
-planes, fighter jets, rockets,
-satellites, nasa, spacex,
-aviation, aircrafts, space exploration
-
-Business:
-startups, entrepreneurship, branding,
-marketing, ecommerce, side hustles,
-company growth, business mindset
-
-Cartoons:
-bluey, bingo, spongebob, tom and jerry,
-simpsons, family guy, cartoon network,
-animated kids shows, disney cartoons,
-looney tunes, animated series
-
-Coding:
-programming, javascript, python, kotlin,
-java, c++, github, web development,
-software engineering, coding tutorials
-
-Comedy:
-memes, skits, funny videos, trolling,
-parody, standup comedy, joke content,
-funny reactions, humor
-
-Commerce:
-shopping, bought items, sales,
-sold out products, trending products,
-unboxing, purchases
-
-Chess:
-chess players, chess board, chess moves
-
-Crime:
-true crime, interrogations, police footage,
-mafia, investigations, criminal cases,
-court cases, prison stories
-
-Dance:
-dance videos, choreography, hip hop dance,
-tiktok dances, ballet, breakdancing,
-dance performances
-
-DIY:
-woodworking, crafts, building projects,
-home diy, restoration, handmade projects,
-repair videos
-
-Education:
-tutorials, explainers, learning,
-documentaries, lectures, courses,
-maths, science lessons, history lessons
-
-Fashion:
-streetwear, outfits, clothing brands,
-designer fashion, styling, fashion shows,
-fashion hauls
-
-Finance:
-investing, stocks, crypto, trading,
-passive income, financial advice,
-stock market, money investing
-
-Fitness:
-gym, workouts, bodybuilding,
-exercise, cardio, strength training,
-weight loss, fitness motivation
-
-Food:
-recipes, cooking, baking,
-street food, restaurants, mukbang,
-food reviews
-
-Games:
-minecraft, fortnite, gta, fifa,
-fc, valorant, gameplay, esports,
-gaming challenges, walkthroughs
-
-Health:
-mental health, wellness, nutrition,
-medical advice, therapy, healthy living
-
-Heartbreak:
-breakups, sadness, divorce,
-emotional pain, crying, loneliness,
-loss, heartbreak edits
-
-History:
-historical events, ancient civilizations,
-wars, kings, empires, ww2,
-historical documentaries
-
-Horror:
-horror, scary, creepy, haunted,
-ghosts, paranormal, demons,
-jumpscares, analog horror,
-backrooms, disturbing videos
-
-Interviews:
-interviews, conversations, podcasts,
-guest talks, talk shows,
-celebrity interviews
-
-Kindness:
-helping others, generosity,
-heartwarming moments, saving people,
-charity, caring moments
-
-Lifestyle:
-daily life, routines, skincare,
-beauty, glow ups, self care,
-house tours, habits, vlogs
-
-Friendship:
-best friends, frienship, bff, homie, friends
-
-
-Love:
-relationships, romance, weddings,
-soulmates, dating, romantic moments,
-love stories
-
-Luxury:
-mansions, yachts, rolex,
-bugatti lifestyle, luxury homes,
-rich lifestyle, billionaire lifestyle
-
-Magic:
-magic tricks, illusions,
-magic performances, street magic
-
-Martial
-Arts:
-karate, kung fu, taekwondo,
-mma training, self defense,
-martial arts fights
-
-Social Media:
-internet culture, reactions,
-creator content, youtube drama,
-fan edits, celebrity culture,
-viral content, commentary
-
-Memes:
-brainrot, sigma edits,
-skibidi, meme edits,
-viral memes, absurd humor
-
-Motivation:
-discipline, hard work,
-success mindset, productivity,
-self improvement, grind culture
+Politics:
+government, elections, parliament, prime minister, president,
+political debates, policies, geopolitics, diplomacy
 
 Beauty:
-beauty, beauty secrets, makeup, appearance secrets, glow up
+makeup, skincare, haircare, grooming, glow ups,
+cosmetics, beauty tips, appearance
 
-Movies:
-films, cinema, movie trailers,
-actors, behind the scenes,
-film clips, blockbuster movies
+11+:
+11+, eleven plus, verbal reasoning, non-verbal reasoning,
+GL assessment, CEM, KS2 entrance exams
 
-Music:
-songs, rap, albums,
-music videos, remixes,
-concerts, beats, playlists
+High School:
+GCSE, IGCSE, A-Level, school revision, homework,
+secondary school lessons
 
-Nation:
-nation, national anthem, national bird, national flag, national army, national holidy, national festival
+University:
+college lectures, university life, admissions,
+undergraduate, postgraduate, campus
 
-Nature:
-forests, oceans, mountains,
-nature scenery, landscapes,
-natural disasters, earth documentaries
+AI-ML:
+machine learning, supervised learning, unsupervised learning,
+deep learning, neural networks
 
-News:
-breaking news, politics,
-current affairs, world events,
-global updates, news reports
+AI-LLM:
+large language models, ChatGPT, Claude, Gemini,
+prompt engineering, RAG, fine tuning
 
-Pets:
-cats, dogs, parrots,
-cute pets, pet care,
-funny pet videos
+AI-Vision:
+computer vision, image recognition, object detection,
+OCR, segmentation
 
-Philosophy:
-stoicism, nihilism,
-deep thoughts, existentialism,
-philosophical discussions
+AI-Robotics:
+robots, robotics, robot arms, humanoid robots,
+robot automation
 
-Photography:
-cinematography, cameras,
-videography, filmmaking,
-editing, colour grading
+Quant:
+quantitative finance, Jane Street, Citadel,
+probability, combinatorics, statistics, brain teasers,
+quant interviews
 
-Podcasts:
-long-form conversations,
-discussion podcasts,
-podcast clips
+English:
+grammar, literature, comprehension, essays,
+creative writing, Shakespeare
 
-Religion:
-christianity, islam, hinduism,
-bible, quran, temples,
-churches, religious teachings
+Maths:
+algebra, geometry, calculus, trigonometry,
+arithmetic, mathematics
 
-Respect:
-respect moments, respecting elders,
-sportsmanship, respectful acts
+Stocks:
+stock market, investing, shares, ETFs,
+earnings, dividends, NASDAQ, NYSE
+
+Food:
+recipes, cooking, restaurants, baking,
+street food, food reviews
 
 Books:
-books, story books, novels, fiction, non-fiction, autobiography
+novels, fiction, non-fiction, biographies,
+book reviews, reading
 
-Science:
-physics, chemistry, biology,
-space science, experiments,
-scientific discoveries
+Tamil:
+Tamil language, Tamil news, Tamil culture,
+Tamil movies, Tamil songs
 
-Series:
-tv shows, netflix series,
-episodes, web series,
-streaming shows
+Tamil Reels:
+Tamil Instagram reels, Tamil memes,
+Tamil edits, Tamil creator content
 
-Social:
-tiktok trends, influencers,
-instagram culture, online trends,
-social media content
+Coding:
+programming, JavaScript, Python, Kotlin,
+Java, C++, React, GitHub, software engineering
 
-Sports:
-football, basketball, cricket,
-ufc, boxing, tennis,
-sports highlights, athletes,
-matches, goals, tournaments
+Fashion:
+clothing, outfits, brands, sneakers,
+streetwear, styling
 
-Stories:
-story, story telling, recount, made up story, animated pretend story
+Habits:
+daily habits, routines, productivity,
+discipline, self improvement
 
-Spirituality:
-manifestation, meditation,
-mindfulness, energy healing,
-spiritual awakening
+Papers:
+research papers, academic papers, arXiv,
+journals, publications
 
-Tech:
-technology, gadgets,
-smartphones, laptops,
-software reviews, ai hardware
-
-Travel:
-vacations, tourism, flights,
-countries, adventures,
-travel vlogs
-
-Weather:
-storms, rain, snow,
-thunder, lightning,
-tornadoes, climate
-Create a short clean human-readable English title.
+Vocab:
+vocabulary, word meanings, English words,
+synonyms, antonyms, language learning
 
 Rules:
 - ALWAYS translate to English if the title is in another language
