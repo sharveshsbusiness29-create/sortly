@@ -613,7 +613,6 @@ Social Media
 Sports
 Spirituality
 Stocks
-Tamil
 Tamil Reels
 Tech
 Travel
@@ -688,10 +687,6 @@ Books:
 novels, fiction, non-fiction, biographies,
 book reviews, reading
 
-Tamil:
-Tamil language, Tamil news, Tamil culture,
-Tamil movies, Tamil songs
-
 Tamil Reels:
 Tamil Instagram reels, Tamil memes,
 Tamil edits, Tamil creator content
@@ -726,6 +721,7 @@ Rules:
 
 - Focus mainly on the TITLE; even if the channel is from a footballer, it could be gaming, 
 therefore it should not be in Sports unless it is actual real-world sports content
+-If there is something funny but is tamil, it should go in tamil reels any videos in tamil should go in tamil reels.
 -If there are videos of content creators going to places this should come into social media folder for example marlon going to turkey should be social media
 -Things like skincare routines, haircuts, general grooming or glowups should come in beauty
 -Things like 1 minute cahllenges or who threw it challenges as a group aren't comedy they come into games regardless of emojis used also guessing the country games etc. should be put into games folders. Overall, doing challenges or playing guessing games should be put into games folder
